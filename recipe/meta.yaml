@@ -11,7 +11,7 @@ source:
   sha256: ce219ea5989aff081a7decc4027d910ba05a7e14ba6dcda2038dbbc9502180bb
 
 build:
-  number: 0
+  number: 1
   skip: true   # [py<36]
   entry_points:
     - fastwsgi = fastwsgi:run_from_cli
