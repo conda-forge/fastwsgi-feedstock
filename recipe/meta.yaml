@@ -1,5 +1,5 @@
 {% set name = "fastwsgi" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastwsgi-{{ version }}.tar.gz
-  sha256: 44e6cf3952173430ea47de519b97750d49f73f729fb0c1bc61a31d8fe6d0f460
+  sha256: e63812196d6f3a248ba51d92df75593f94cf096d4d654d45d9921ce023ad2bf9
 
 build:
   number: 0
