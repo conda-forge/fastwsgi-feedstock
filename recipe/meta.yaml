@@ -1,5 +1,5 @@
 {% set name = "fastwsgi" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastwsgi-{{ version }}.tar.gz
-  sha256: e63812196d6f3a248ba51d92df75593f94cf096d4d654d45d9921ce023ad2bf9
+  sha256: 17ef4c6dcccc2d0b9cf317a71b2ade544a742253511a0c87c0838d4f4fdfacd1
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36]
   entry_points:
     - fastwsgi = fastwsgi:run_from_cli
