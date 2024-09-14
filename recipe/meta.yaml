@@ -11,7 +11,7 @@ source:
   sha256: e63812196d6f3a248ba51d92df75593f94cf096d4d654d45d9921ce023ad2bf9
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<36]
   entry_points:
     - fastwsgi = fastwsgi:run_from_cli
@@ -20,12 +20,15 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - pip
     - python
+    - setuptools
   run:
     - click >=7.0
     - python
+    - setuptools
 
 test:
   imports:
