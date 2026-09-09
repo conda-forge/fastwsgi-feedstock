@@ -24,11 +24,11 @@ requirements:
   host:
     - pip
     - python
-    - setuptools
+    - setuptools <82
   run:
     - click >=7.0
     - python
-    - setuptools
+    - setuptools <82
 
 test:
   imports:
